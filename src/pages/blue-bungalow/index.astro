@@ -11,7 +11,7 @@ const imageModules = import.meta.glob(
   },
 );
 
-// Convert to array and sort by filename
+// Convert to array and sort by filename.
 const images = Object.entries(imageModules)
   .sort(([a], [b]) => {
     const aNum = parseInt(a.match(/(\d+)/)?.[0] || "0");
