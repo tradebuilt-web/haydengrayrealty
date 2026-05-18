@@ -18,7 +18,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: "https://rubzip.github.io",
-  base: "/",
+  site: "https://tradebuilt-web.github.io",
+  base: "/haydengrayrealty'",
   integrations: [sitemap()],
 });
