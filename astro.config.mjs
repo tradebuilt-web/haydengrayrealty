@@ -20,7 +20,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: "https://tradebuilt-web.github.io",
-  base: "/haydengrayrealty",
+  site: "https://haydengrealty.com",
   integrations: [sitemap()],
 });
