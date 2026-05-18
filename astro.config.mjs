@@ -19,6 +19,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: "https://tradebuilt-web.github.io",
-  base: "/haydengrayrealty'",
+  base: "/",
   integrations: [sitemap()],
 });
