@@ -2,7 +2,7 @@
 title: "Information Theory and Biology"
 date: "1953-04-01"
 description: "Exploring the application of information theory to biological systems and genetics, pioneering the field of bioinformatics."
-author: "Claude Shannon"
+author: "Hayden Gray"
 tags:
   - "Information Theory"
   - "Biology"
@@ -27,8 +27,9 @@ DNA can be viewed as an information channel. The storage and transmission of gen
 ### The Mathematical Framework
 
 For a genetic channel with:
+
 - Input: Parent DNA sequences
-- Noise: Mutations, copying errors  
+- Noise: Mutations, copying errors
 - Output: Offspring DNA
 
 We can analyze capacity and error rates using information theory.
@@ -49,4 +50,4 @@ This paper helped establish the field of bioinformatics and showed that informat
 
 ---
 
-*The unity of information across all biological systems continues to reveal new insights into the nature of life itself.*
+_The unity of information across all biological systems continues to reveal new insights into the nature of life itself._

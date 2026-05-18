@@ -2,7 +2,7 @@
 title: "Symbolic Analysis of Relay and Switching Circuits"
 date: "1937-10-01"
 description: "My master's thesis that applied Boolean algebra to electrical circuits, laying the groundwork for digital computing and modern computer science."
-author: "Claude Shannon"
+author: "Hayden Gray"
 tags:
   - "Digital Computing"
   - "Boolean Algebra"
@@ -16,11 +16,11 @@ My master's thesis at MIT, completed in 1937, demonstrated that Boolean algebra 
 
 The crucial insight was that the binary nature of electrical relays (open/closed) perfectly mapped onto the two values of Boolean algebra (true/false). This meant that the entire framework of logic could be directly applied to circuits:
 
-| Boolean Operation | Circuit Equivalent |
-|-------------------|---------------------|
-| AND | Series contacts |
-| OR | Parallel contacts |
-| NOT | Relay coil (normally open) |
+| Boolean Operation | Circuit Equivalent         |
+| ----------------- | -------------------------- |
+| AND               | Series contacts            |
+| OR                | Parallel contacts          |
+| NOT               | Relay coil (normally open) |
 
 ## The Structure
 
@@ -46,4 +46,4 @@ Little did I know that George Boole's 19th-century work on symbolic logic would 
 
 ---
 
-*Sometimes the most important ideas come from unexpected connections - in this case, Boolean algebra and telephone relays.*
+_Sometimes the most important ideas come from unexpected connections - in this case, Boolean algebra and telephone relays._

@@ -2,18 +2,18 @@
 title: "A Mathematical Theory of Communication"
 date: "1948-07-01"
 description: "The seminal paper that established information theory as a new field of study. Introduced the concept of entropy and channel capacity."
-author: "Claude Shannon"
+author: "Hayden Gray"
 tags:
   - "Information Theory"
   - "Mathematics"
   - "Communications"
 ---
 
-In this groundbreaking paper published in the *Bell System Technical Journal*, I introduced the concept of **information entropy** and established the fundamental limits of data compression and transmission.
+In this groundbreaking paper published in the _Bell System Technical Journal_, I introduced the concept of **information entropy** and established the fundamental limits of data compression and transmission.
 
 ## The Fundamental Problem
 
-> *"The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point."*
+> _"The fundamental problem of communication is that of reproducing at one point, either exactly or approximately, a message selected at another point."_
 
 This seemingly simple statement encompasses everything from telephone calls to satellite television to the internet.
 
@@ -56,4 +56,4 @@ The paper had only 55 pages, but its impact has been immeasurable. It won me the
 
 ---
 
-*This paper changed everything. The world went digital because of the theoretical foundation I provided.*
+_This paper changed everything. The world went digital because of the theoretical foundation I provided._

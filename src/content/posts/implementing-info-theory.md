@@ -2,7 +2,7 @@
 title: "Implementing Information Theory in Python"
 date: "1956-06-01"
 description: "A practical guide to implementing entropy calculation and data compression using Python."
-author: "Claude Shannon"
+author: "Hayden Gray"
 tags:
   - "Information Theory"
   - "Python"
@@ -29,14 +29,14 @@ def calculate_entropy(text: str) -> float:
     """
     # Count frequency of each character
     freq = Counter(text)
-    
+
     # Calculate probabilities
     total = len(text)
     probabilities = [count / total for count in freq.values()]
-    
+
     # Calculate entropy
     entropy = -sum(p * math.log2(p) for p in probabilities if p > 0)
-    
+
     return entropy
 
 # Example usage
@@ -64,11 +64,11 @@ class HuffmanNode:
 def build_huffman_tree(text: str) -> HuffmanNode:
     """Build Huffman tree from text."""
     freq = Counter(text)
-    
+
     # Create priority queue
     heap = [HuffmanNode(freq=freq[char], char=char) for char in freq]
     heapq.heapify(heap)
-    
+
     # Build tree
     while len(heap) > 1:
         left = heapq.heappop(heap)
@@ -80,13 +80,13 @@ def build_huffman_tree(text: str) -> HuffmanNode:
             right=right
         )
         heapq.heappush(heap, merged)
-    
+
     return heap[0]
 
 def encode_huffman(root: HuffmanNode, text: str) -> tuple[Dict[str, str], str]:
     """Generate Huffman codes and encode text."""
     codes = {}
-    
+
     def generate_codes(node: HuffmanNode, code: str = ""):
         if node.char:
             codes[node.char] = code or "0"
@@ -95,9 +95,9 @@ def encode_huffman(root: HuffmanNode, text: str) -> tuple[Dict[str, str], str]:
                 generate_codes(node.left, code + "0")
             if node.right:
                 generate_codes(node.right, code + "1")
-    
+
     generate_codes(root)
-    
+
     # Encode text
     encoded = "".join(codes[char] for char in text)
     return codes, encoded
@@ -122,7 +122,7 @@ def channel_capacity(bandwidth: float, snr: float) -> float:
     """
     Calculate channel capacity using Shannon-Hartley theorem.
     C = B × log₂(1 + S/N)
-    
+
     Args:
         bandwidth: Bandwidth in Hz
         snr: Signal-to-noise ratio (not in dB)
@@ -172,4 +172,4 @@ These implementations demonstrate the practical application of information theor
 
 ---
 
-*Information theory provides the mathematical foundation for all modern digital communication.*
+_Information theory provides the mathematical foundation for all modern digital communication._

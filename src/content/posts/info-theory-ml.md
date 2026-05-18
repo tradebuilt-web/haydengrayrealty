@@ -2,7 +2,7 @@
 title: "Information Theory and Machine Learning"
 date: "1956-03-01"
 description: "Exploring the connections between information theory and the emerging field of machine learning. Published in the IRE Transactions."
-author: "Claude Shannon"
+author: "Hayden Gray"
 tags:
   - "Information Theory"
   - "Machine Learning"
@@ -49,4 +49,4 @@ Today, the intersection of information theory and machine learning is richer tha
 
 ---
 
-*Looking back, I believe information theory provides the fundamental limits that any learning system must respect.*
+_Looking back, I believe information theory provides the fundamental limits that any learning system must respect._

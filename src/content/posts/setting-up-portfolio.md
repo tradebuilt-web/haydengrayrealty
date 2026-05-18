@@ -2,7 +2,7 @@
 title: "Setting up Your Academic Portfolio"
 date: "2026-04-28"
 description: "A comprehensive guide on how to clone, configure, and deploy your new academic portfolio."
-author: "Claude Shannon"
+author: "Hayden Gray"
 tags:
   - "Documentation"
   - "Setup"
@@ -57,18 +57,18 @@ The core configuration for your portfolio is centralized in the `src/config/site
 ```typescript
 // src/config/site.ts
 export const SITE: SiteConfig = {
-    website: "https://your-domain.com/",
-    author: "Your Name",
-    desc: "Your personal academic portfolio.",
-    title: "Your Name",
-    ogImage: "your-image.webp",
-    postPerPage: 5,
-    favicon: "/favicon.svg",
-    lang: "en",
+  website: "https://your-domain.com/",
+  author: "Your Name",
+  desc: "Your personal academic portfolio.",
+  title: "Your Name",
+  ogImage: "your-image.webp",
+  postPerPage: 5,
+  favicon: "/favicon.svg",
+  lang: "en",
 };
 ```
 
-Make sure to update the `website`, `author`, `desc`, `title` fields to match your personal details. 
+Make sure to update the `website`, `author`, `desc`, `title` fields to match your personal details.
 
 ### Analytics configuration
 
@@ -76,13 +76,14 @@ If you want to track page views, you can configure Google Analytics 4 or Umami a
 
 ```typescript
 export const ANALYTICS: AnalyticsConfig = {
-    ga4Id: "G-XXXXXXXXXX", // Add your Google Analytics 4 Measurement ID
-    umami: {
-        websiteId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-        src: "https://cloud.umami.is/script.js", 
-    }
+  ga4Id: "G-XXXXXXXXXX", // Add your Google Analytics 4 Measurement ID
+  umami: {
+    websiteId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    src: "https://cloud.umami.is/script.js",
+  },
 };
 ```
+
 Analytics are lazy-loaded by default, ensuring they have zero impact on your Core Web Vitals!
 
 ## 3. Theming and Aesthetics
@@ -93,9 +94,9 @@ In `site.ts`, you can toggle whether you want dark mode enabled, and choose your
 
 ```typescript
 export const THEME_CONFIG: ThemeConfig = {
-    lightAndDark: true, // Enable the moon/sun toggle
-    themeLight: "light_notepad", 
-    themeDark: "dark_notepad",
+  lightAndDark: true, // Enable the moon/sun toggle
+  themeLight: "light_notepad",
+  themeDark: "dark_notepad",
 };
 ```
 
@@ -106,9 +107,10 @@ You can preview all the available color palettes by visiting the built-in Develo
 Your portfolio is fully driven by Markdown (`.md`) files. This makes it extremely easy to version control your content and write freely. All of your collections are located in `src/content/`.
 
 Here are the primary collections you'll work with:
+
 - **`posts/`**: Your blog posts (like this one!).
 - **`projects/`**: Showcase your software, hardware, or research projects.
-- **`publications/`**: List your academic papers. 
+- **`publications/`**: List your academic papers.
 - **`talks/`**: Archive your conference presentations and slides.
 - **`teaching/`**: List the courses you teach or have taught.
 
@@ -129,6 +131,7 @@ export const PAGES: PagesConfig = {
     ...
 };
 ```
+
 This configuration will disable the talks page in the navigation bar and the content collection.
 
 ### Writing a new post

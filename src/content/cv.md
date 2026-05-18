@@ -1,5 +1,5 @@
 ---
-name: "Claude Shannon"
+name: "Hayden Gray"
 title: "Mathematician and Electrical Engineer"
 experience:
   - role: "Research Mathematician"
@@ -22,6 +22,7 @@ education:
 ---
 
 ## Skills
+
 - Information Theory
 - Mathematics
 - Electrical Engineering
@@ -29,4 +30,5 @@ education:
 - Computer Science
 
 ## Biographical Summary
+
 Extra biographical notes or a summary can go here.

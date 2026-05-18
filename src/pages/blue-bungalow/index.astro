@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { PAGES } from "../../config";
+import { Image } from "astro:assets";
+
+// Import all images from the folder
+const imageModules = import.meta.glob(
+  "../../assets/images/blue-bungalow/*.{jpg,jpeg,webp,png}",
+  {
+    eager: true,
+  },
+);
+
+// Convert to array and sort by filename
+const images = Object.entries(imageModules)
+  .sort(([a], [b]) => {
+    const aNum = parseInt(a.match(/(\d+)/)?.[0] || "0");
+    const bNum = parseInt(b.match(/(\d+)/)?.[0] || "0");
+    return aNum - bNum;
+  })
+  .map(([, module]) => module.default);
+
+if (PAGES.dream_casa.isActive === false) {
+  return Astro.redirect("/404");
+}
+---
+
+<BaseLayout title={PAGES.dream_casa.title}>
+  <div class="text-center my-16 mb-32">
+    <div
+      class="mx-auto container my-8 sm:columns-2 md:columns-3 lg:columns-4 xl:columns-5"
+    >
+      {
+        images.map((image, index) => (
+          <Image
+            src={image}
+            alt={`Dream Casa image ${index + 1}`}
+            quality="mid"
+            loading="lazy"
+            class="rounded-sm mb-4 border border-transparent hover:border-gray-300 transition-all duration-300 ease-in-out hover:shadow-lg w-full hover:cursor-pointer"
+          />
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>

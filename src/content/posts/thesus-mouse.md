@@ -2,7 +2,7 @@
 title: "Theseus - The Mouse in the Maze"
 date: "1950-03-01"
 description: "My famous experimental machine that learned to navigate a maze using telephone relay circuits and magnetism. One of the first examples of machine learning."
-author: "Claude Shannon"
+author: "Hayden Gray"
 tags:
   - "AI"
   - "Robotics"
@@ -53,4 +53,4 @@ The machine was demonstrated at Bell Labs and generated significant interest. It
 
 ---
 
-*Theseus showed that intelligence isn't unique to biological systems - it can be reproduced in machines using the right circuits.*
+_Theseus showed that intelligence isn't unique to biological systems - it can be reproduced in machines using the right circuits._
