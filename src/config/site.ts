@@ -13,7 +13,7 @@ export const SITE: SiteConfig = {
   title: "Hayden Gray",
   ogImage: "shannon.webp",
   postPerPage: 5,
-  favicon: "/favicon.svg",
+  favicon: "/favicon.png",
   lang: "en",
 };
 
