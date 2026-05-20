@@ -7,9 +7,8 @@ institution: "Farmington, NM"
 
 ## Mission
 
-Focused on acquiring underperforming apartment assets and increasing value through midterm
-rental optimization, operational efficiency, and strategic value-add improvements designed to
-create accelerated appreciation and investor exits within 3–7 years.
+Focused on acquiring and optimizing underperforming apartment assets through midterm rental
+strategies and value-add improvements to drive appreciation and investor exits within 3–7 years.
 
 ## Executive Summary
 
@@ -21,16 +20,8 @@ scalable systems focused on NOI growth, forced appreciation, and portfolio scala
 ## Investment Strategy
 
 - Small Multifamily & Residential Real Estate
-
-* Value-Add / Midterm Rental Optimization
-
-* ADU Additions & Revenue Maximization
-
-* Hold Period: 3–7 Years
-
-* Focus: Cash Flow, Forced Appreciation & Equity Growth
-
-* Conservative Underwriting & Strategic Capital Reserves
+- Forced appreciation through ADU additions & Mid Term Rental Revenue Maximization
+- Risk mitigation using Conservative Underwriting & Strategic Capital Reserves
 
 ## Deal Experience & Track Record
 
@@ -42,7 +33,7 @@ scalable systems focused on NOI growth, forced appreciation, and portfolio scala
 
 - Role: Owner Operator
 
-- Used ~\$6K down payment to force ~$40K in appreciation through ADU expansion and operational improvements in 14 months.
+- Used ~\$6K down payment + \$9K in renovations to force ~$40K in appreciation through ADU expansion and operational improvements in 14 months.
 
 - Achieved ~80% cash-on-cash return through optimized rental revenue strategy.
 
@@ -54,7 +45,7 @@ scalable systems focused on NOI growth, forced appreciation, and portfolio scala
 
 - Role: Owner Operator
 
-- Used ~\$15K down payment to force ~$50K in additional equity through ADU addition and
+- Used ~\$15K down payment + \$10K in renovations to force ~$50K in additional equity through ADU addition and
   optimization in 6 months.
 
 - Currently break-even while owner occupied with projected ~62% cash-on-cash return after full
@@ -70,7 +61,7 @@ throughput, reducing inefficiencies, and implementing process automation.
   workflows and maximize output.
 - Warehouse Manager – Led a 5-person team and doubled shipping throughput through layout
   redesign and digitalization.
-- DHL Performance Engineer – Managed labor systems across 8 warehouse sites representing
+- Performance Engineer – Managed labor systems across 8 warehouse sites representing
   1,100+ personnel and led operational improvement initiatives resulting in productivity increases
   exceeding 150%.
 
@@ -80,7 +71,7 @@ throughput, reducing inefficiencies, and implementing process automation.
 - Minors: Business Administration & Military Science Leadership
 - Lean Six Sigma Green Belt Certified
 - Completed Utah Realtor Education Course
-- National Mortgage Loan Originator Certification (NMLS # XXXXX)
+- National Mortgage Loan Originator Certification (NMLS # 2816408)
 - Conducted hundreds of investment analyses evaluating cash flow, forced appreciation, ADU
   expansion potential, financing structures, and long-term optimization strategies.
 

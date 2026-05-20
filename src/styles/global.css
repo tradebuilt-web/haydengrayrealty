@@ -941,3 +941,57 @@ a:hover,
 .main-body {
   padding: 0px 16px 32px 16px;
 }
+
+.retro-glow {
+  color: #e6dfd3;
+  animation:
+    retroGlow 3s ease-in-out infinite,
+    flicker 7s linear infinite;
+}
+
+@keyframes retroGlow {
+  0%,
+  100% {
+    text-shadow:
+      0 0 1px rgba(137, 207, 240, 0.15),
+      0 0 3px rgba(137, 207, 240, 0.08);
+
+    opacity: 0.92;
+  }
+
+  50% {
+    text-shadow:
+      0 0 4px rgba(137, 207, 240, 0.45),
+      0 0 10px rgba(137, 207, 240, 0.3),
+      0 0 18px rgba(137, 207, 240, 0.18);
+
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  62%,
+  100% {
+    opacity: 1;
+  }
+
+  20%,
+  24%,
+  60% {
+    opacity: 0.86;
+  }
+}
+
+.contact-form {
+}
+
+input,
+textarea {
+  border: 1px solid var(--color-border);
+  padding: 4px 8px;
+  border-radius: 4px;
+  width: 100%;
+}

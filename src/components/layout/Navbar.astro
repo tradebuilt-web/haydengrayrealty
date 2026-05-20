@@ -23,7 +23,7 @@ const currentPath = Astro.url.pathname;
               (link.href !== "/" && currentPath.startsWith(link.href))
                 ? "active"
                 : "inactive"
-            }`}
+            } ${link.href == "/invest" ? "retro-glow" : ""}`}
           >
             {link.label}
             <span class="nav-link-line" />
