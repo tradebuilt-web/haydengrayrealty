@@ -4,7 +4,7 @@ import { getCollection } from "astro:content";
 import Icon from "../ui/Icon.astro";
 import { Image } from "astro:assets";
 
-const activeSocials = SOCIALS.filter((s) => s.isActive);
+const activeSocials = SOCIALS.filter((s) => s?.isActive);
 const bioCollection = await getCollection("bio");
 const bio = bioCollection[0]?.data;
 ---

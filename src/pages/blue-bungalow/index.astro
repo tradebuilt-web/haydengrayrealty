@@ -20,7 +20,7 @@ const images = Object.entries(imageModules)
   })
   .map(([, module]) => module.default);
 
-if (PAGES.blue_bungalow.isActive === false) {
+if (PAGES.blue_bungalow?.isActive === false) {
   return Astro.redirect("/404");
 }
 ---
