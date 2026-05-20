@@ -3,15 +3,13 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { PAGES } from "../../config";
 import { Image } from "astro:assets";
 
-// Import all images from the folder
+// Import all images from folder
 const imageModules = import.meta.glob(
   "../../assets/images/dream-casa/*.{jpg,jpeg,webp,png}",
-  {
-    eager: true,
-  },
+  { eager: true },
 );
 
-// Convert to array and sort by filename
+// Sort images numerically
 const images = Object.entries(imageModules)
   .sort(([a], [b]) => {
     const aNum = parseInt(a.match(/(\d+)/)?.[0] || "0");
@@ -37,10 +35,46 @@ if (PAGES.dream_casa?.isActive === false) {
             alt={`Dream Casa image ${index + 1}`}
             quality="mid"
             loading="lazy"
-            class="rounded-sm mb-4 border border-transparent hover:border-gray-300 transition-all duration-300 ease-in-out hover:shadow-lg w-full hover:cursor-pointer"
+            data-full={image.src}
+            class="gallery-image rounded-sm mb-4 border border-transparent hover:border-gray-300 transition-all duration-300 ease-in-out hover:shadow-lg w-full hover:cursor-pointer"
           />
         ))
       }
     </div>
   </div>
+
+  <script>
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+    const closeButton = document.getElementById("close-modal");
+
+    const images = document.querySelectorAll(".gallery-image");
+
+    function openModal(src) {
+      modalImage.src = src;
+      modal.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      modal.classList.add("hidden");
+      document.body.style.overflow = "";
+    }
+
+    images.forEach((img) => {
+      img.addEventListener("click", () => {
+        openModal(img.dataset.full);
+      });
+    });
+
+    closeButton?.addEventListener("click", closeModal);
+
+    modal?.addEventListener("click", (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeModal();
+    });
+  </script>
 </BaseLayout>

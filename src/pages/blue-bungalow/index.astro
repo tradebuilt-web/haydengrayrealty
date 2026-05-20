@@ -34,13 +34,50 @@ if (PAGES.blue_bungalow?.isActive === false) {
         images.map((image, index) => (
           <Image
             src={image}
-            alt={`Dream Casa image ${index + 1}`}
+            alt={`Blue Bungalow image ${index + 1}`}
             quality="mid"
             loading="lazy"
-            class="rounded-sm mb-4 border border-transparent hover:border-gray-300 transition-all duration-300 ease-in-out hover:shadow-lg w-full hover:cursor-pointer"
+            data-full={image.src}
+            class="gallery-image rounded-sm mb-4 border border-transparent hover:border-gray-300 transition-all duration-300 ease-in-out hover:shadow-lg w-full hover:cursor-pointer"
           />
         ))
       }
     </div>
   </div>
+
+  <script>
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+    const closeButton = document.getElementById("close-modal");
+
+    document.querySelectorAll(".gallery-image").forEach((img) => {
+      img.addEventListener("click", () => {
+        modalImage.src = img.dataset.full;
+
+        modal.classList.remove("hidden");
+
+        document.body.style.overflow = "hidden";
+      });
+    });
+
+    function closeModal() {
+      modal.classList.add("hidden");
+
+      document.body.style.overflow = "";
+    }
+
+    closeButton.addEventListener("click", closeModal);
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    });
+  </script>
 </BaseLayout>

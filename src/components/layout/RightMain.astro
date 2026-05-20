@@ -4,9 +4,18 @@ import Footer from "./Footer.astro";
 ---
 
 <div class="main-content">
-    <Navbar />
-    <div class="main-body animate-in">
-        <slot />
-    </div>
-    <Footer />
+  <Navbar />
+
+  <!-- Global Image Modal -->
+  <div id="image-modal" class="modal hidden">
+    <button id="close-modal" class="modal-close">&times;</button>
+
+    <img id="modal-image" src="" alt="" class="modal-image" />
+  </div>
+
+  <div class="main-body animate-in">
+    <slot />
+  </div>
+
+  <Footer />
 </div>
