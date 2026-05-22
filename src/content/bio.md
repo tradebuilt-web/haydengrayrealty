@@ -7,15 +7,15 @@ institution: "Farmington, NM"
 
 ## Mission
 
-Focused on acquiring and optimizing underperforming apartment assets through midterm rental
-strategies and value-add improvements to drive appreciation and investor exits within 3–7 years.
+- Acquire underperforming apartment assets
+- Use revenue optimization through midterm rental strategies and value-add
+  improvements to force appreciation
+- Pay off investor in 3-7 years
 
 ## Executive Summary
 
-Founder of Alpine Oasis Rentals, specializing in small multifamily optimization through midterm
-rental operations and ADU additions to maximize cash flow and long-term asset value. Combines
-industrial engineering, operational efficiency management, and data-driven analysis to implement
-scalable systems focused on NOI growth, forced appreciation, and portfolio scalability.
+Founder and operator of Alpine Oasis Rentals which combines industrial engineering and
+data-driven analysis to scale multifamily real estate portfolios.
 
 ## Investment Strategy
 
@@ -53,10 +53,6 @@ scalable systems focused on NOI growth, forced appreciation, and portfolio scala
 
 ## Professional Background
 
-Operations-driven investor with a background in industrial engineering, warehouse optimization,
-and operational efficiency management. Experienced in building scalable systems, increasing
-throughput, reducing inefficiencies, and implementing process automation.
-
 - Operational Efficiency Manager – Develops low-level software tools to modernize production
   workflows and maximize output.
 - Warehouse Manager – Led a 5-person team and doubled shipping throughput through layout
@@ -68,8 +64,6 @@ throughput, reducing inefficiencies, and implementing process automation.
 ## Education & Real Estate Training
 
 - Auburn University – Industrial & Systems Engineering (Magna Cum Laude)
-- Minors: Business Administration & Military Science Leadership
-- Lean Six Sigma Green Belt Certified
 - Completed Utah Realtor Education Course
 - National Mortgage Loan Originator Certification (NMLS # 2816408)
 - Conducted hundreds of investment analyses evaluating cash flow, forced appreciation, ADU
@@ -80,8 +74,5 @@ throughput, reducing inefficiencies, and implementing process automation.
 - Financial Modeling
 - Property Revenue Optimization
 - Python Programming & Automation
-- Process Improvement
-- Operational Systems Development
-- Data-Driven Decision Making
 
 ---
