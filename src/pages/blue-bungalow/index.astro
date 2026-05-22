@@ -25,6 +25,25 @@ if (PAGES.blue_bungalow?.isActive === false) {
 }
 ---
 
+<div
+  id="image-modal"
+  class="hidden fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+>
+  <button
+    id="close-modal"
+    class="absolute top-4 right-4 text-white text-5xl leading-none hover:opacity-70 transition"
+  >
+    &times;
+  </button>
+
+  <img
+    id="modal-image"
+    src=""
+    alt="Expanded image"
+    class="max-w-full max-h-full object-contain"
+  />
+</div>
+
 <BaseLayout title={PAGES.blue_bungalow.title}>
   <div class="text-center my-16 mb-32">
     <div
@@ -46,38 +65,52 @@ if (PAGES.blue_bungalow?.isActive === false) {
   </div>
 
   <script>
-    const modal = document.getElementById("image-modal");
-    const modalImage = document.getElementById("modal-image");
-    const closeButton = document.getElementById("close-modal");
+    function initGalleryModal() {
+      const modal = document.getElementById("image-modal");
+      const modalImage = document.getElementById("modal-image");
+      const closeButton = document.getElementById("close-modal");
 
-    document.querySelectorAll(".gallery-image").forEach((img) => {
-      img.addEventListener("click", () => {
-        modalImage.src = img.dataset.full;
+      if (!modal || !modalImage || !closeButton) return;
 
-        modal.classList.remove("hidden");
+      // Prevent duplicate listeners
+      if (modal.dataset.initialized === "true") return;
+      modal.dataset.initialized = "true";
 
-        document.body.style.overflow = "hidden";
+      document.querySelectorAll(".gallery-image").forEach((img) => {
+        img.addEventListener("click", () => {
+          modalImage.src = img.dataset.full;
+
+          modal.classList.remove("hidden");
+
+          document.body.style.overflow = "hidden";
+        });
       });
-    });
 
-    function closeModal() {
-      modal.classList.add("hidden");
+      function closeModal() {
+        modal.classList.add("hidden");
 
-      document.body.style.overflow = "";
+        document.body.style.overflow = "";
+      }
+
+      closeButton.addEventListener("click", closeModal);
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeModal();
+        }
+      });
     }
 
-    closeButton.addEventListener("click", closeModal);
+    // Initial page load
+    initGalleryModal();
 
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        closeModal();
-      }
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        closeModal();
-      }
-    });
+    // Astro client-side navigation
+    document.addEventListener("astro:page-load", initGalleryModal);
   </script>
 </BaseLayout>

@@ -48,33 +48,34 @@ if (PAGES.dream_casa?.isActive === false) {
     const modalImage = document.getElementById("modal-image");
     const closeButton = document.getElementById("close-modal");
 
-    const images = document.querySelectorAll(".gallery-image");
-
-    function openModal(src) {
-      modalImage.src = src;
-      modal.classList.remove("hidden");
-      document.body.style.overflow = "hidden";
-    }
-
-    function closeModal() {
-      modal.classList.add("hidden");
-      document.body.style.overflow = "";
-    }
-
-    images.forEach((img) => {
+    document.querySelectorAll(".gallery-image").forEach((img) => {
       img.addEventListener("click", () => {
-        openModal(img.dataset.full);
+        modalImage.src = img.dataset.full;
+
+        modal.classList.remove("hidden");
+
+        document.body.style.overflow = "hidden";
       });
     });
 
-    closeButton?.addEventListener("click", closeModal);
+    function closeModal() {
+      modal.classList.add("hidden");
 
-    modal?.addEventListener("click", (e) => {
-      if (e.target === modal) closeModal();
+      document.body.style.overflow = "";
+    }
+
+    closeButton.addEventListener("click", closeModal);
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
     });
 
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeModal();
+      if (e.key === "Escape") {
+        closeModal();
+      }
     });
   </script>
 </BaseLayout>
